@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+body {
+    font-family: "Reddit Mono", monospace;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+}
+body:before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/fondo.jpg");
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    z-index: -2;
+    opacity: 0.050;
+    background-size: contain;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+}
+ul, li, p, h1, h2, h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.x-container {
+    max-width: 1400px;
+    margin: auto;
+}
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__left a {
+    width: 200px;
+    overflow: hidden;
+    display: block;
+    height: 80px;
+}
+.header__left img {
+    max-width: 70px;
+    display: block;
+    position: relative;
+    /**top: -75px;
+    left: -20px;*/
+}
+.header__right__content {
+    display: flex;
+    align-items: center;
+}
+.mysocial {
+    margin-left: 50px;
+}
+.mysocial ul {
+    display: flex;
+}
+.mysocial a {
+    display: block;
+    margin-left: 10px;
+}
+.mysocial ul img {
+    max-width: 25px;
+    display: block;
+    /*filter: invert(1);*/
+}
+.mymenu ul {
+    display: flex;
+}
+.mymenu a {
+    display: block;
+    color: rgb(34, 32, 32);
+}
+.mymenu ul a {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.hero__top__flex {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.hero__top__left {
+    width: 50%;
+}
+
+.contentitle {
+    max-width: 620px;
+}
+.contentitle h1 {
+    font-size: 65px;
+    color: #cf1ec6;
+    line-height: 70px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #de9fe9;
+}
+.contentitle p {
+    color: #95CBC8;
+    font-size: 22px;
+}
+.hero__top__right {
+    width: 50%;
+}
+.logicanimation {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    padding-top: 120px;
+}
+
+.logicanimation img {
+    position: absolute;
+    right: 20px;
+    top: -200;
+    width: 100%;
+    /*animation: animTop 4s ease 0s infinite normal forwards;*/
+}
+
+.about__flex {
+    padding: 20px;
+    background-color: #ffffff;
+    padding-top: 100px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    animation: moveRightLeft 4s linear infinite alternate;
+}
+
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
+
+.about,
+.planes {
+  margin-bottom: 20px;
+}
+
+div.content {
+    background: #95CBC8;
+}
+
+div.plan {
+    border: 5px solid #95CBC8;
+    margin-left: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 35px rgb(166, 236, 198);
+}
+
+.plan img {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+
+.x-container {
+    padding-bottom: 100px;
+}
+
+div.planes__flex {
+    display: flex;
+    justify-content: center;
+}
+
+div.content h3{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: black;
+};
+
